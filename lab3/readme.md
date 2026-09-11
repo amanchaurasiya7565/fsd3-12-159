@@ -16,5 +16,34 @@ html-> hyper text markup language
 
 2^32 port for input in any computer 
 
+## http status codes -> res.WriteHead(),res.StatusCode()
+
+- 200 -> OK
+- 201 -> Created
+- 400 -> Bad Request
+- 401 -> Unauthorized
+- 403 -> forbidden
+- 404 -> Not Found
+- 500 -> Internal Server Error
 
 
+
+- server can send to the client
+1. html content  -> prg3, prg3
+2. html file     -> prg5
+3. json data     -> prg4
+4. plain file
+5. js file
+6. any file to download
+7. etc
+
+
+## Type of information -> res.writeHead(), res.setHeader()
+1. text/html ->for html file/contents
+2. text/json , application/json -> for json data
+3. text/css -> for css fole/ contents
+4. application  -> for file
+5. text/plain ->for plain text file
+
+
+### Note: .gitignore ->  this files contains the list of files or folder that is not added to git , these files/folder will not push on GitHub

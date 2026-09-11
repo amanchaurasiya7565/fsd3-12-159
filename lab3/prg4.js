@@ -15,10 +15,16 @@ const server = http.createServer((req, res) => {
       name: "HP Laptop",
       price: 95000,
       qty: 1,
-      discount: 25,
-    },
+        discount: 25,
+      },
+    {
+        name: "Headphone",
+        price: 2000,
+        qty: 1, 
+        discount: 50,
+     },
   ];
   res.end(JSON.stringify(product));
 });
 
-server.listen(3000, () => console.log("Server is running at 3000..."));
+server.listen(3000, () => console.log("prg4 is running at 3000..."));
