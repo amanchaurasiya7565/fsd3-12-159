@@ -16,6 +16,7 @@ const checkout = (name) => {
 const task = new EventEmitter();
 task.once("greeting", start);
 task.on("greeting", login);
+
 task.on("greeting", working);
 
 task.on("greeting", checkout);

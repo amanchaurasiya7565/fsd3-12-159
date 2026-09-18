@@ -24,6 +24,7 @@ const handleClick = (event) => {
 button.addEventlistner("click", handleClick);
 
 button.dispatchEvent("click", {
+    
     target: "submitBtn",
 
 });
