@@ -25,6 +25,7 @@ task.once("exit", () => {
     console.log("shutting down");
 });
 task.emit("greeting", "Mayank bansal");
+//task.emit("greeting", "Aman chaurasiya");
 task.emit("greeting", "Aman chaurasiya");
 
 task.off("greeting", working);

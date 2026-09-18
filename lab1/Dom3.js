@@ -6,6 +6,7 @@ button.on("click", (uname) => {
 button.emit("click", "Aman");
 
 button.emit("click", "Raman");
+button.emit("click", "Chaman");
 
 
 button.emit("click", "the man");

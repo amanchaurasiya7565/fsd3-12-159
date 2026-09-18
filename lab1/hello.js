@@ -15,3 +15,6 @@ console.log(add(10, 20));
 console.log(add2(10, 30));
 console.log(add2(30, 30));
 console.log(add2(40, 30));
+console.log(add2(940, 300));
+console.log(add2(940, 350));
+console.log(add2(940, 310));
