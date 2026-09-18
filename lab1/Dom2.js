@@ -9,4 +9,6 @@ button.on("click", () => {
     console.log("Task 2");
 
 });
+
+
 button.emit("click");

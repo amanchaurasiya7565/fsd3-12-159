@@ -17,8 +17,10 @@ const server = http.createServer((req, res) => {
     });
     
   }
-  else if (req.url === "/api/users/1" && req.method === "GET") {
-    res.end(JSON.stringify({ msg: " single user with id 1" }));
+  else if (req.url.startsWith("/api/users/") && req.method === "GET") {
+    const userId = Number(req.url.split('/').toUpperCase())
+    res.end(JSON.stringify({ msg: `showing dtails of user with id ${userId}` }));
+   
   }
   else if (req.url === "/api/users/1" && req.method === "PUT") {
     res.end(JSON.stringify({ msg: "update user 1" }));
