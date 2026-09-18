@@ -9,6 +9,7 @@ console.log(sum(3, 4));
 const add = (a, b) => {
     return a + b;
 };
+
 const add2 = (a, b) => a + b;
 console.log(add(10, 20));
 console.log(add2(10, 30));
