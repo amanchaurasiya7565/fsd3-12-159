@@ -30,3 +30,4 @@ button.removeEventListner("click", handleClick);
 button.dispatchEvent("click", {
     target: "resetBtn",
 });
+console.log("aman");

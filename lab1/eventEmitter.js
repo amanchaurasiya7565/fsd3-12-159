@@ -18,11 +18,13 @@ task.once("greeting", start);
 task.on("greeting", login);
 task.on("greeting", working);
 task.on("greeting", checkout);
+
 task.once("exit", () => {
     console.log("shutting down");
 });
 task.emit("greeting", "Mayank bansal");
 task.emit("greeting", "Aman chaurasiya");
+
 task.off("greeting", working);
 task.emit("greeting", "MN chaurasiya");
 task.emit("exit", "manager");
