@@ -13,3 +13,5 @@ const add = (a, b) => {
 const add2 = (a, b) => a + b;
 console.log(add(10, 20));
 console.log(add2(10, 30));
+console.log(add2(30, 30));
+console.log(add2(40, 30));

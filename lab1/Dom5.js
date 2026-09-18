@@ -22,6 +22,7 @@ const handleClick = (event) => {
     console.log(`Button clicked type : ${event.type} at  ${event.timespam}`);
 };
 button.addEventlistner("click", handleClick);
+
 button.dispatchEvent("click", {
     target: "submitBtn",
 
