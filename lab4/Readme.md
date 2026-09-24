@@ -19,3 +19,10 @@ script{
 - REST API uses (get,post,put,patch,delete ) method to communicate with client
 - any browser can check only get mehod 
 - for other method type we use third party party API Tester like postman,thunder client,echo api etc
+
+## Request type
+1. GET -> get all(/api/products) ,getbyid(/api/products/1)
+2. POST -> form help of this method we add any product in db.(/api/useers), data will be share by echo api body section
+3. PATCH/PATCH -> /api/products/908 .data will be share by echo api body section
+4. DELETE -> api/prodcuts/110 
+5. helper function -> exported function can be used by any imported function.
