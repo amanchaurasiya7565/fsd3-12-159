@@ -1,8 +1,9 @@
 import http from "http";
 
 const server = http.createServer();
+
 server.on('request', (req, res) => {
-    
+
     res.write("Hello frome server");
 
     res.end();

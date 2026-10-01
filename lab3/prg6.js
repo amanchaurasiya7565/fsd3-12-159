@@ -5,12 +5,15 @@ const server = http.createServer((req, res) => {
   res.setHeader("content-type", "text/html");
   if (req.url === "/") {
     res.write("<h1>Home Page</h1>");
+
     res.end(`<a href="/product">Product</a>
+
            <a href="/contact">Contact</a>
       
          `);
   } else if (req.url === "/product") {
     const stream = createReadStream("product.html", { encoding: "utf-8" });
+    
     stream.pipe(res);
   } else if (req.url === "/contact") {
     const stream = createReadStream("contactus.html", { encoding: "utf-8" });
