@@ -18,8 +18,8 @@ app.get("/about", (req, res) => {
 app.get("/product" , (req, res)=> {
     const product = {
         id: 1, 
-        name: "Aman Chaurasiya", 
-        price: 324423,
+        name: "Mobile", 
+        price: 30000,
     };
 
 
