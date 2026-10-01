@@ -11,14 +11,18 @@ const server = http.createServer((req, res) => {
            <a href="/contact">Contact</a>
       
          `);
-  } else if (req.url === "/product") {
+  }
+  else if (req.url === "/product") {
     const stream = createReadStream("product.html", { encoding: "utf-8" });
-    
+
     stream.pipe(res);
-  } else if (req.url === "/contact") {
+
+  }
+  else if (req.url === "/contact") {
     const stream = createReadStream("contactus.html", { encoding: "utf-8" });
     stream.pipe(res);
-  } else {
+  }
+  else {
     res.statusCode = 404;
     res.end("Not found");
   }

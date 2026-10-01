@@ -7,16 +7,19 @@ const server = http.createServer((req, res) => {
             <a href='/product'>Product Page</a>
             <a href='/contact'>Contact Page</a>
             `);
-  } else if (req.url === "/product") {
+  }
+  else if (req.url === "/product") {
     res.write(`
             <h1>Iphone XL</h1>
             <h2> Price: 90000</h2>
             <h3> Discount: 30%</h3>
     `);
     res.end();
-  } else if (req.url === "/contact") {
+  }
+  else if (req.url === "/contact") {
     res.end("<h1>Contact Us");
-  } else {
+  }
+  else {
     res.statusCode = 404;
     res.end(`
             <h1> Page not found</h1>
