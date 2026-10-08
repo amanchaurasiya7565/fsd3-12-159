@@ -26,13 +26,19 @@ cd backend
 9. ``` 
       import express from "express"
 
-const app = express();
+      const app = express();
 
-app.get("/", (req, res) => {
-    res.send("Hello Express");
-});
-//This line must be last line
-app.listen(4444, () => console.log('prg1 is running at 4444'));
-```
+      app.get("/", (req, res) => {
+          res.send("Hello Express");
+      });
+      //This line must be last line
+      app.listen(4444, () => console.log('prg1 is running at 4444'));
+      ```
 
 
+
+# Static import 
+- in express we can add any static html pages with the help of express.static method
+
+
+- Express supports middleware, when wwe have to excute some funcion before server excution then we middleware app.use always aplied to insert any middleware 
