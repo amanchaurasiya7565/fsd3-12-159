@@ -9,27 +9,38 @@ function Hello() {
   );
 
 }
-function Product() {
+function Product(props) {
   return (
     <>
-      <h2>Product :Laptop</h2>
-      <h3>Price : 34000</h3>
-      <p> Review : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil amet sint, veniam et similique tempore dignissimos laboriosam adipisci minima?</p>
+      <h2>{props.name}</h2>
+      <h3>{props.price}</h3>
+     <h3>{props.rating}</h3>
+     <h3>{props.review}</h3>
     </>
   )
 }
   
 
 function App() {
-  
+  const item = {
+    name: "Mobile Phone",
+    price: 25000,
+    rating: 4.6,
+    review: 1500,
+  };
+  const item2 = {
+    name: "laptop",
+    price: 250000,
+    rating: 4.9,
+    review: "This is best laptop",
+  };
 
   return (
     <>
+      <Product{...item}/>
       <h1>hello meri jaan</h1>
-     
-    
       <Hello />
-      <Product />
+      <Product{...item2} />
     </>
   )
 }
