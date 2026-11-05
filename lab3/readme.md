@@ -1,5 +1,5 @@
 # HTTP Module
-It is built in Node .js Module which allows deve;per to create web server and web client without installing any  external package.
+It is built in Node .js Module which allows developer to create web server and web client without installing any  external package.
 
 
 one  of the most important module in Node.js ,originally disigned for building scalable network application and web servers .
